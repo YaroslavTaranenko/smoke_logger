@@ -1,0 +1,22 @@
+{
+  "name": "smoke_logger",
+  "version": "1.0.0",
+  "description": "console app for logging when I smoke",
+  "main": "./dist/app.js",
+  "repository": "https://github.com/YaroslavTaranenko/smoke_logger",
+  "author": "YaroslavTaranenko <taranenkojaroslav@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon ./dist/app.js",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "nodemon": "^3.1.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "node": "^21.6.2"
+  }
+}
