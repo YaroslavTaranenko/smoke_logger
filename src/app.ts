@@ -10,8 +10,14 @@ class SmokeLogger {
     this.log("SmokeLogger started");
   }
 
+  private formateDate(date: Date){
+    
+  }
+
   log(message: string) {
-    console.log(`[${new Date().toISOString().split('T')[0]}] ${message}`);
+    const dateArr = new Date().toISOString().split('T');
+    
+    console.log(`[${dateArr[0]} ${dateArr[1]?.split('.')[0]}] ${message}`);
   }
 
   listenCommands() {
